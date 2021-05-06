@@ -3,12 +3,12 @@ package Exercise4_4;
 public class GreenApple extends Apple { //sub class for Apple
 	
 	protected String brand;
-	protected double vitc;
+	protected String taste;
 	
-	public GreenApple(String name, double price, int quantity, String brand, double vitc) { 
+	public GreenApple(String name, double price, int quantity, String brand, String taste) { 
 		super(name, price, quantity);
 		this.brand = brand;
-		this.vitc = vitc;
+		this.taste = taste;
 		
 		System.out.println("Green Apple constructor is invoked.");
 	}
@@ -17,8 +17,8 @@ public class GreenApple extends Apple { //sub class for Apple
 		return this.brand;
 	}
 	
-	public double vitc() {
-		return this.vitc;
+	public String tasteGreenApple() {
+		return this.taste;
 	}
 		
 	public double calPrice() { //overriding method from class Apple
